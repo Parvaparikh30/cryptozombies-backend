@@ -1,0 +1,28 @@
+{
+  "name": "cryptozombies-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarinKhakhi/cryptozombies-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarinKhakhi/cryptozombies-backend/issues"
+  },
+  "homepage": "https://github.com/HarinKhakhi/cryptozombies-backend#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "openzeppelin-solidity": "^4.4.1",
+    "truffle-hdwallet-provider": "^1.0.17",
+    "web3": "^1.6.1"
+  }
+}
