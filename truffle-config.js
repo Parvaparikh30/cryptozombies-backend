@@ -19,10 +19,12 @@
  */
 
 const HDWalletProvider = require('@truffle/hdwallet-provider');
+const YOUR_MNEMONIC = "Your mnemonic or Private Key";
+const RPC_LINK = "YOUR_RPC_LINK";
+
 //
 // const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
-
+const mnemonic = YOUR_MNEMONIC
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -48,10 +50,8 @@ module.exports = {
     },
 
     matic: {
-      provider: () => new HDWalletProvider(mnemonic, `https://rpc-mumbai.maticvigil.com`),
+      provider: () => new HDWalletProvider(mnemonic, RPC_LINK),
       network_id: 80001,
-      confirmations: 2,
-      timeoutBlocks: 200,
       skipDryRun: true
     },
 
